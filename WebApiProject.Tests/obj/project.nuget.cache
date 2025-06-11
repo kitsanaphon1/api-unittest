@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "aHTFV6zj6Dw=",
+  "dgSpecHash": "0B7T4cT+wio=",
   "success": true,
   "projectFilePath": "D:\\Devops tools\\Dev\\api-unittest\\WebApiProject.Tests\\WebApiProject.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cholw\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\cholw\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\cholw\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.1\\microsoft.aspnetcore.openapi.9.0.1.nupkg.sha512",
     "C:\\Users\\cholw\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",
     "C:\\Users\\cholw\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.2\\microsoft.entityframeworkcore.9.0.2.nupkg.sha512",
