@@ -1,7 +1,8 @@
 name: Build & Scan Docker Image
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [dev]
 
 permissions:
   contents: read
@@ -25,6 +26,15 @@ jobs:
 
       - name: Build Test Project
         run: dotnet build WebApiProject.Tests/WebApiProject.Tests.csproj --configuration Debug
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        with:
+          projectBaseDir: ./WebApiProject
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_PROJECT_KEY: kitsanaphon1_api-unittest
+          SONAR_ORGANIZATION: kitsanaphon1
 
       - name: Run Unit Tests and Collect Coverage
         run: |
