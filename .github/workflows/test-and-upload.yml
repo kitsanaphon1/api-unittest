@@ -3,9 +3,7 @@ name: Build & Scan Docker Image
 on:
   push:
     branches: [dev]
-  pull_request:
-    branches: [dev]
-
+    
 permissions:
   contents: read
   security-events: write
