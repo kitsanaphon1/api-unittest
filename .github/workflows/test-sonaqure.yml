@@ -20,9 +20,8 @@ jobs:
         with:
           dotnet-version: '9.0.x'
 
-      - name: ⬇️ Restore solution
+      - name: ⬇️ Restore project
         run: dotnet restore WebApiProject/WebApiProject.csproj
-
 
       - name: 🔨 Build project (เพื่อให้ Sonar วิเคราะห์ได้)
         run: dotnet build WebApiProject/WebApiProject.csproj --no-restore --configuration Release
@@ -34,7 +33,7 @@ jobs:
             -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
             -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
             -Dsonar.projectBaseDir=./WebApiProject
-            -Dsonar.sources=.
+            -Dsonar.sources=./WebApiProject
             -Dsonar.exclusions=**/bin/**,**/obj/**
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
