@@ -1,59 +1,72 @@
-คู่มือการจัดการ Unit Test ใน .NET Solution
-✅ โครงสร้างโปรเจกต์ที่คุณใช้อยู่:
+คู่มือ Setup SonarCloud สำหรับ GitHub Actions (แบบละเอียด)
+🔧 ขั้นตอนที่ 1: สมัครและเชื่อมต่อ GitHub
+ไปที่ https://sonarcloud.io
 
-api-unittest/
-│
-├── WebApiProject/                  # โปรเจกต์ API หลัก (.csproj)
-│
-├── WebApiProject.Tests/           # โปรเจกต์ Unit Test (xUnit)
-│   ├── ...Tests.cs                # ไฟล์ทดสอบต่าง ๆ
-│
-└── WebApiProject.sln              # รวมทั้งสองโปรเจกต์ไว้ด้วยกัน
-🛠 การทำงานกับ Unit Test
-🟢 1. การสร้าง / แก้ Unit Test
-เพิ่ม / แก้ไขไฟล์ภายใต้ WebApiProject.Tests/
+Login ด้วย GitHub Account
 
-ไม่ต้องแตะไฟล์ .sln หากไม่ได้เพิ่มโปรเจกต์ใหม่
+คลิก + → Analyze new project
 
+เลือก GitHub Org และ Repo ที่ต้องการ
 
-# ตัวอย่างเพิ่มไฟล์ใหม่
-WebApiProject.Tests/HealthControllerTests.cs
-WebApiProject.Tests/ProductsControllerTests.cs
-🟢 2. Commit และ Push ตามปกติ
+SonarCloud จะสร้าง Project Key ให้อัตโนมัติ (เช่น kitsanaphon1_api-unittest)
 
-git add WebApiProject.Tests/
-git commit -m "✅ เพิ่ม Unit Test สำหรับ ProductsController"
-git push origin feature/test-products
-🟡 3. เมื่อเพิ่มโปรเจกต์ (.csproj) ใหม่เท่านั้น → ต้องเพิ่มเข้า .sln
+🔐 ขั้นตอนที่ 2: สร้าง SONAR_TOKEN
+ไปที่ https://sonarcloud.io/account/security/
 
-dotnet sln WebApiProject.sln add Path/To/NewProject.csproj
-⚙️ การรันทดสอบ (Local)
+กด "Generate Tokens"
 
-# รันทดสอบทั้งหมดใน .sln
-dotnet test WebApiProject.sln
+ตั้งชื่อ token เช่น GH-ACTIONS
 
-# หรือเฉพาะโปรเจกต์ Unit Test
-dotnet test WebApiProject.Tests/WebApiProject.Tests.csproj
-🤖 การรันทดสอบ (GitHub Actions)
+กด Create และ คัดลอก ค่า token ทันที (แสดงครั้งเดียวเท่านั้น)
 
-- name: 🧪 Run Unit Tests
-  run: dotnet test WebApiProject.sln --logger "trx;LogFileName=test-results.trx" --results-directory ./TestResults
-🔁 กรณีที่ต้องการ merge code:
-Dev A เขียน API → feature/api-users
+🔑 ขั้นตอนที่ 3: ตั้งค่า GitHub Secrets
+เข้าไปที่ GitHub repo ของคุณ →
+Settings → Secrets and variables → Actions → New repository secret
 
-Dev B เขียน test → feature/test-users
+เพิ่ม:
 
-ทั้งคู่ PR เข้าสู่ dev
+Name	Value
+SONAR_TOKEN	🔑 Token ที่คัดลอกจากขั้นตอนที่ 2
+SONAR_PROJECT_KEY	เช่น kitsanaphon1_api-unittest
+SONAR_ORGANIZATION	เช่น kitsanaphon1
 
-GitHub Actions จะรัน test อัตโนมัติ
+🧪 ขั้นตอนที่ 4: เพิ่มลงใน GitHub Actions Workflow
+ใช้ action แบบใหม่ตามนี้:
 
-Merge PR ได้เมื่อผ่าน
+yaml
+Copy
+Edit
+- name: SonarCloud Scan
+  uses: SonarSource/sonarqube-scan-action@v5.0.0
+  with:
+    args: >
+      -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
+      -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
+      -Dsonar.projectBaseDir=./WebApiProject
+  env:
+    SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+วางไว้ หลัง build แต่ ก่อน run unit test เพื่อให้แน่ใจว่าโค้ด compile แล้ว
 
-❗ สรุปสิ่งที่ “ไม่ต้องทำซ้ำ”:
-สถานการณ์	ต้องรัน dotnet sln add ไหม?
-✅ แค่เพิ่ม/แก้ไฟล์ test (.cs)	❌ ไม่ต้อง
-✅ เพิ่ม test class ใหม่	❌ ไม่ต้อง
-✅ เปลี่ยน test logic	❌ ไม่ต้อง
-⚠ เพิ่มโปรเจกต์ .csproj ใหม่	✅ ต้องเพิ่มเข้า .sln
+🗂 ขั้นตอนเพิ่มเติม (ถ้าอยากให้ส่ง Code Coverage ไปด้วย)
+ให้ generate report .xml แล้วระบุ path เพิ่มเติมใน args เช่น:
 
-ถ้าคุณต้องการฉัน export เป็น .pdf หรือ markdown สำหรับส่งให้ทีม dev ก็แจ้งได้เลยครับ ✅
+yaml
+Copy
+Edit
+-Dsonar.cs.opencover.reportsPaths=TestResults/**/coverage.opencover.xml
+⚠️ ต้องใช้ --collect:"XPlat Code Coverage" และอาจต้อง convert เป็น opencover ด้วย coverlet ถ้าใช้ SonarCloud กับ .NET
+
+✅ ตรวจสอบผลลัพธ์
+หลัง push ขึ้น GitHub branch ที่กำหนด (เช่น dev)
+
+ไปที่ sonarcloud.io → Project ของคุณ
+
+ดูข้อมูล:
+
+🧪 Bugs, Code Smells
+
+🔐 Vulnerabilities
+
+📈 Coverage %
+
+หากคุณใช้ SonarQube (self-hosted) แทน SonarCloud ก็แจ้งได้นะครับ วิธีจะต่างออกไปนิดหน่อย (เช่น ต้องเปิด port เอง, ใช้ self-hosted runner)
