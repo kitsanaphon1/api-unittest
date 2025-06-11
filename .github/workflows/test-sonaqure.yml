@@ -40,18 +40,12 @@ jobs:
       - name: Install ReportGenerator tool
         run: dotnet tool install -g dotnet-reportgenerator-globaltool
 
-      - name: Generate HTML & OpenCover Coverage Report
+      - name: Generate OpenCover Coverage Report (for SonarCloud)
         run: |
           ~/.dotnet/tools/reportgenerator \
             -reports:TestResults/**/coverage.cobertura.xml \
             -targetdir:TestResults/report \
-            -reporttypes:Html;opencover
-
-      - name: Upload HTML Report as Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: html-test-report
-          path: TestResults/report
+            -reporttypes:opencover
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarqube-scan-action@v5.0.0
@@ -105,7 +99,7 @@ jobs:
           from: GitHub CI <${{ secrets.MAIL_USERNAME }}>
           body: |
             ✅ All CI steps completed successfully.
-            - Unit Tests passed (see GitHub Actions log or download HTML coverage report)
+            - Unit Tests passed
             - Docker Image built and pushed
             - Trivy scan completed
             - SonarCloud Coverage sent
