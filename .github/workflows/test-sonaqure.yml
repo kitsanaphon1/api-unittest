@@ -1,4 +1,4 @@
-name: SonarCloud Code Scan Only
+name: SonarCloud Code Scan Full Repo
 
 on:
   push:
@@ -20,11 +20,11 @@ jobs:
         with:
           dotnet-version: '9.0.x'
 
-      - name: ⬇️ Restore project
+      - name: ⬇️ Restore dependencies
         run: dotnet restore WebApiProject/WebApiProject.csproj
 
-      - name: 🔨 Build project (เพื่อให้ Sonar วิเคราะห์ได้)
-        run: dotnet build WebApiProject/WebApiProject.csproj --no-restore --configuration Release
+      - name: 🔨 Build all projects (main + tests)
+        run: dotnet build WebApiProject.sln --no-restore --configuration Release
 
       - name: 🧪 SonarCloud Scan
         uses: SonarSource/sonarqube-scan-action@v5.0.0
@@ -32,8 +32,8 @@ jobs:
           args: >
             -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
             -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
-            -Dsonar.projectBaseDir=./WebApiProject
-            -Dsonar.sources=./WebApiProject
+            -Dsonar.projectBaseDir=.
+            -Dsonar.sources=.
             -Dsonar.exclusions=**/bin/**,**/obj/**
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
