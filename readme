@@ -4,34 +4,36 @@
 
 Login ด้วย GitHub Account
 
-คลิก + → Analyze new project
+คลิกปุ่ม + → เลือก Analyze new project
 
-เลือก GitHub Org และ Repo ที่ต้องการ
+เลือก GitHub Organization และ Repository ที่ต้องการ
 
-SonarCloud จะสร้าง Project Key ให้อัตโนมัติ (เช่น kitsanaphon1_api-unittest)
+SonarCloud จะสร้าง Project Key ให้อัตโนมัติ (เช่น: kitsanaphon1_api-unittest)
 
 🔐 ขั้นตอนที่ 2: สร้าง SONAR_TOKEN
-ไปที่ https://sonarcloud.io/account/security/
+เข้าไปที่: https://sonarcloud.io/account/security/
 
-กด "Generate Tokens"
+คลิกปุ่ม "Generate Tokens"
 
 ตั้งชื่อ token เช่น GH-ACTIONS
 
-กด Create และ คัดลอก ค่า token ทันที (แสดงครั้งเดียวเท่านั้น)
+กด Create แล้ว คัดลอกค่า token ทันที (จะแสดงครั้งเดียว)
 
 🔑 ขั้นตอนที่ 3: ตั้งค่า GitHub Secrets
-เข้าไปที่ GitHub repo ของคุณ →
+ที่ GitHub Repository ของคุณ:
+
 Settings → Secrets and variables → Actions → New repository secret
 
-เพิ่ม:
+เพิ่ม 3 รายการต่อไปนี้:
 
-Name	Value
-SONAR_TOKEN	🔑 Token ที่คัดลอกจากขั้นตอนที่ 2
+Name	ค่า (Value)
+SONAR_TOKEN	🔑 Token ที่คัดลอกจาก SonarCloud
 SONAR_PROJECT_KEY	เช่น kitsanaphon1_api-unittest
 SONAR_ORGANIZATION	เช่น kitsanaphon1
 
-🧪 ขั้นตอนที่ 4: เพิ่มลงใน GitHub Actions Workflow
-ใช้ action แบบใหม่ตามนี้:
+🧪 ขั้นตอนที่ 4: เพิ่ม SonarCloud Scan ลงใน GitHub Actions
+แนะนำให้เพิ่มหลังขั้นตอน build และก่อน unit test:
+
 
 - name: SonarCloud Scan
   uses: SonarSource/sonarqube-scan-action@v5.0.0
@@ -42,26 +44,46 @@ SONAR_ORGANIZATION	เช่น kitsanaphon1
       -Dsonar.projectBaseDir=./WebApiProject
   env:
     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-วางไว้ หลัง build แต่ ก่อน run unit test เพื่อให้แน่ใจว่าโค้ด compile แล้ว
+🗂 ขั้นตอนเพิ่มเติม: ส่ง Code Coverage ไปยัง SonarCloud
+หากใช้ .NET + Coverlet:
 
-🗂 ขั้นตอนเพิ่มเติม (ถ้าอยากให้ส่ง Code Coverage ไปด้วย)
-ให้ generate report .xml แล้วระบุ path เพิ่มเติมใน args เช่น:
+เพิ่มการเก็บผลแบบ OpenCover:
 
+
+--collect:"XPlat Code Coverage"
+Convert รายงานให้รองรับ SonarCloud (ใช้ coverlet):
 
 -Dsonar.cs.opencover.reportsPaths=TestResults/**/coverage.opencover.xml
-⚠️ ต้องใช้ --collect:"XPlat Code Coverage" และอาจต้อง convert เป็น opencover ด้วย coverlet ถ้าใช้ SonarCloud กับ .NET
+❗ คุณอาจต้องใช้ reportgenerator แปลงจาก cobertura → opencover ถ้าไม่ได้ generate ตรง
 
-✅ ตรวจสอบผลลัพธ์
-หลัง push ขึ้น GitHub branch ที่กำหนด (เช่น dev)
+⚠️ แก้ปัญหา: ERROR You are running CI analysis while Automatic Analysis is enabled
+❌ สาเหตุ:
+SonarCloud เปิด Automatic Analysis (สแกนอัตโนมัติ) แต่คุณรันผ่าน CI (GitHub Actions) ซึ่งขัดกัน
 
-ไปที่ sonarcloud.io → Project ของคุณ
+✅ วิธีปิด Automatic Analysis:
+เข้า https://sonarcloud.io
 
-ดูข้อมูล:
+ไปที่หน้าโปรเจกต์ของคุณ (api-unittest)
 
-🧪 Bugs, Code Smells
+เลือกเมนู Project Settings
+
+เข้าเมนู "Analysis Method"
+
+เลือก "CI-based analysis"
+
+กด Save
+
+📈 ตรวจสอบผลลัพธ์
+หลัง push code ไปยัง branch เช่น dev
+
+ไปที่ https://sonarcloud.io
+
+เปิดหน้าโปรเจกต์ของคุณ → ดูผลลัพธ์:
+
+✅ Bugs
 
 🔐 Vulnerabilities
 
-📈 Coverage %
+⚠️ Code Smells
 
-หากคุณใช้ SonarQube (self-hosted) แทน SonarCloud ก็แจ้งได้นะครับ วิธีจะต่างออกไปนิดหน่อย (เช่น ต้องเปิด port เอง, ใช้ self-hosted runner)
+📊 Test Coverage %
