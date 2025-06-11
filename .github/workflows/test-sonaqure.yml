@@ -21,7 +21,8 @@ jobs:
           dotnet-version: '9.0.x'
 
       - name: ⬇️ Restore solution
-        run: dotnet restore WebApiProject.csproj
+        run: dotnet restore WebApiProject/WebApiProject.csproj
+
 
       - name: 🔨 Build project (เพื่อให้ Sonar วิเคราะห์ได้)
         run: dotnet build WebApiProject/WebApiProject.csproj --no-restore --configuration Release
