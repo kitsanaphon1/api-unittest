@@ -12,6 +12,9 @@ jobs:
   build-and-scan:
     runs-on: ubuntu-latest
 
+    env:
+      DOTNET_ROOT: /home/runner/.dotnet
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
@@ -62,7 +65,7 @@ jobs:
             -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
             -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
             -Dsonar.projectBaseDir=./WebApiProject
-            -Dsonar.cs.opencover.reportsPaths=TestResults/coverage.opencover.xml
+            -Dsonar.cs.opencover.reportsPaths=../TestResults/coverage.opencover.xml
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
