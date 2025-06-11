@@ -35,12 +35,15 @@ jobs:
             --results-directory TestResults \
             --verbosity normal
 
+      - name: Install ReportGenerator tool
+        run: dotnet tool install -g dotnet-reportgenerator-globaltool
+
       - name: Generate HTML Test Report
-        uses: danielpalme/reportgenerator-action@5.3.6
-        with:
-          reports: TestResults/test-results.trx
-          targetdir: TestResults/report
-          reporttypes: HtmlInline_AzurePipelines;Html
+        run: |
+          ~/.dotnet/tools/reportgenerator \
+            -reports:TestResults/test-results.trx \
+            -targetdir:TestResults/report \
+            -reporttypes:Html
 
       - name: Upload HTML Report as Artifact
         uses: actions/upload-artifact@v4
