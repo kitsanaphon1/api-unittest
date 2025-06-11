@@ -31,7 +31,7 @@ jobs:
             --logger "trx;LogFileName=test-results.trx" \
             --results-directory ./TestResults
 
-      - name: Debug: Show test result file
+      - name: "Debug: Show test result file"
         run: find . -name "*.trx"
 
       - name: 🛠️ Install ReportGenerator
