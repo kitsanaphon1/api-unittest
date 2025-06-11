@@ -26,8 +26,15 @@ jobs:
 
       - name: 🧪 Run Unit Tests and Show Results
         run: |
+          mkdir -p TestResults
           dotnet test WebApiProject.Tests/WebApiProject.Tests.csproj \
-            --no-build --verbosity normal
+            --no-build \
+            --logger "trx;LogFileName=test-results.trx" \
+            --results-directory TestResults \
+            --verbosity normal
+
+      - name: 📄 Show Test Result File (Optional Debug)
+        run: cat TestResults/test-results.trx || echo "No test result file found"
 
       - name: 🐳 Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -67,7 +74,7 @@ jobs:
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: "✅ CI/CD Pipeline Succeeded"
           to: chol.www02@gmail.com
-          from: GitHub CI <${{ secrets.MAIL_USERNAME }}>>
+          from: GitHub CI <${{ secrets.MAIL_USERNAME }}>
           body: |
             ✅ All CI steps completed successfully.
             - 🧪 Unit Tests passed (see GitHub Actions log)
