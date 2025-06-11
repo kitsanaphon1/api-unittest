@@ -28,13 +28,14 @@ jobs:
         run: dotnet build WebApiProject.Tests/WebApiProject.Tests.csproj --configuration Debug
 
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
+        uses: SonarSource/sonarqube-scan-action@v5.0.0
         with:
-          projectBaseDir: ./WebApiProject
+          args: >
+            -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
+            -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
+            -Dsonar.projectBaseDir=./WebApiProject
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_PROJECT_KEY: kitsanaphon1_api-unittest
-          SONAR_ORGANIZATION: kitsanaphon1
 
       - name: Run Unit Tests and Collect Coverage
         run: |
