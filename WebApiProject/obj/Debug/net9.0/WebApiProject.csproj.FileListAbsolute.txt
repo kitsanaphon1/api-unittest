@@ -1,0 +1,257 @@
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\appsettings.Development.json
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\appsettings.json
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\WebApiProject.staticwebassets.endpoints.json
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\WebApiProject.exe
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\WebApiProject.deps.json
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\WebApiProject.runtimeconfig.json
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\WebApiProject.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\WebApiProject.pdb
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Humanizer.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Microsoft.OpenApi.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Mono.TextTemplating.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Npgsql.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\System.CodeDom.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\System.Composition.Convention.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\System.Composition.Hosting.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\System.Composition.Runtime.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\System.Composition.TypedParts.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\devc#\MySolution\WebApiProject\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\WebApiProject.csproj.AssemblyReference.cache
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\WebApiProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\WebApiProject.AssemblyInfoInputs.cache
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\WebApiProject.AssemblyInfo.cs
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\WebApiProject.csproj.CoreCompileInputs.cache
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\WebApiProject.MvcApplicationPartsAssemblyInfo.cs
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\WebApiProject.MvcApplicationPartsAssemblyInfo.cache
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\scopedcss\bundle\WebApiProject.styles.css
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\staticwebassets.build.json
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\staticwebassets.development.json
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\staticwebassets\msbuild.WebApiProject.Microsoft.AspNetCore.StaticWebAssets.props
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\staticwebassets\msbuild.WebApiProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\staticwebassets\msbuild.build.WebApiProject.props
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.WebApiProject.props
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.WebApiProject.props
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\staticwebassets.pack.json
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\WebApiPr.F32AE1AA.Up2Date
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\WebApiProject.dll
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\refint\WebApiProject.dll
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\WebApiProject.pdb
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\WebApiProject.genruntimeconfig.cache
+D:\devc#\MySolution\WebApiProject\obj\Debug\net9.0\ref\WebApiProject.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\appsettings.Development.json
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\appsettings.json
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\WebApiProject.staticwebassets.endpoints.json
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\WebApiProject.exe
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\WebApiProject.deps.json
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\WebApiProject.runtimeconfig.json
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\WebApiProject.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\WebApiProject.pdb
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Humanizer.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Microsoft.OpenApi.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Mono.TextTemplating.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Npgsql.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\System.CodeDom.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\System.Composition.Convention.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\System.Composition.Hosting.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\System.Composition.Runtime.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\System.Composition.TypedParts.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\WebApiProject.csproj.AssemblyReference.cache
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\WebApiProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\WebApiProject.AssemblyInfoInputs.cache
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\WebApiProject.AssemblyInfo.cs
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\WebApiProject.csproj.CoreCompileInputs.cache
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\WebApiProject.MvcApplicationPartsAssemblyInfo.cs
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\WebApiProject.MvcApplicationPartsAssemblyInfo.cache
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\scopedcss\bundle\WebApiProject.styles.css
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\staticwebassets.build.json
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\staticwebassets.development.json
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\staticwebassets\msbuild.WebApiProject.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\staticwebassets\msbuild.WebApiProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\staticwebassets\msbuild.build.WebApiProject.props
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.WebApiProject.props
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.WebApiProject.props
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\staticwebassets.pack.json
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\WebApiPr.F32AE1AA.Up2Date
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\WebApiProject.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\refint\WebApiProject.dll
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\WebApiProject.pdb
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\WebApiProject.genruntimeconfig.cache
+D:\Devops tools\Dev\api-unittest\WebApiProject\obj\Debug\net9.0\ref\WebApiProject.dll
