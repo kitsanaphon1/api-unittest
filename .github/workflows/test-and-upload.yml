@@ -31,11 +31,21 @@ jobs:
             --logger "trx;LogFileName=test-results.trx" \
             --results-directory ./TestResults
 
-      - name: 📎 Upload Unit Test Report (.trx)
+      - name: 🛠️ Install ReportGenerator
+        run: dotnet tool install --global dotnet-reportgenerator-globaltool
+
+      - name: 📊 Generate HTML Test Report
+        run: |
+          reportgenerator \
+            -reports:TestResults/test-results.trx \
+            -targetdir:TestReportHtml \
+            -reporttypes:Html
+
+      - name: 📎 Upload HTML Test Report
         uses: actions/upload-artifact@v4
         with:
-          name: unit-test-report
-          path: TestResults/test-results.trx
+          name: test-report-html
+          path: TestReportHtml
 
       - name: 🐳 Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -79,7 +89,7 @@ jobs:
           body: |
             ✅ All CI steps completed successfully.
             - 🧪 Unit Tests passed
-            - 📄 TRX Report uploaded as artifact
+            - 📄 HTML Test Report uploaded
             - 🐳 Docker Image built and pushed
             - 🔍 Trivy scan completed
             - 📦 Image: sooyaa02/api-unittest:latest
