@@ -25,7 +25,7 @@ jobs:
         run: dotnet restore WebApiProject/WebApiProject.csproj
 
       - name: Debug: List Available Unit Tests
-        run: |
+        run:  |
           echo "=== Listing Unit Tests ==="
           dotnet test WebApiProject.Tests/WebApiProject.Tests.csproj --list-tests || true
 
