@@ -20,8 +20,11 @@ jobs:
         with:
           dotnet-version: '9.0.x'
 
+      - name: ⬇️ Restore solution
+        run: dotnet restore WebApiProject.sln
+
       - name: 🔨 Build project (เพื่อให้ Sonar วิเคราะห์ได้)
-        run: dotnet build WebApiProject/WebApiProject.csproj --no-restore
+        run: dotnet build WebApiProject/WebApiProject.csproj --no-restore --configuration Release
 
       - name: 🧪 SonarCloud Scan
         uses: SonarSource/sonarqube-scan-action@v5.0.0
@@ -30,7 +33,7 @@ jobs:
             -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
             -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
             -Dsonar.projectBaseDir=./WebApiProject
-            -Dsonar.sources=. 
+            -Dsonar.sources=.
             -Dsonar.exclusions=**/bin/**,**/obj/**
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
