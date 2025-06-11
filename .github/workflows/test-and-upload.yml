@@ -35,11 +35,18 @@ jobs:
             --results-directory TestResults \
             --verbosity normal
 
-      - name: Upload Test Results (.trx) as Artifact
+      - name: Generate HTML Test Report
+        uses: danielpalme/reportgenerator-action@5.3.6
+        with:
+          reports: TestResults/test-results.trx
+          targetdir: TestResults/report
+          reporttypes: HtmlInline_AzurePipelines;Html
+
+      - name: Upload HTML Report as Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: test-results
-          path: TestResults/test-results.trx
+          name: html-test-report
+          path: TestResults/report
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -82,7 +89,7 @@ jobs:
           from: GitHub CI <${{ secrets.MAIL_USERNAME }}>
           body: |
             ✅ All CI steps completed successfully.
-            - Unit Tests passed (see GitHub Actions log or download artifact)
+            - Unit Tests passed (see GitHub Actions log or download HTML report)
             - Docker Image built and pushed
             - Trivy scan completed
             - Image: sooyaa02/api-unittest:latest
