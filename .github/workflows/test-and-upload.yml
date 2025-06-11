@@ -31,7 +31,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: unit-test-report
-          path: ./TestResults/test-results.trx
+          path: '**/test-results.trx'
 
       - name: 🐳 Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
