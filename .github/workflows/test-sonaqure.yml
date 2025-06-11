@@ -24,7 +24,7 @@ jobs:
         run: dotnet restore WebApiProject/WebApiProject.csproj
 
       - name: 🔨 Build WebApiProject only
-        run: dotnet build WebApiProject/WebApiProject.csproj --no-restore --configuration Release
+        run: dotnet build WebApiProject/WebApiProject.csproj --configuration Release
 
       - name: 🧪 SonarCloud Scan (WebApiProject only)
         uses: SonarSource/sonarqube-scan-action@v5.0.0
@@ -32,8 +32,9 @@ jobs:
           args: >
             -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
             -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
-            -Dsonar.projectBaseDir=./WebApiProject
+            -Dsonar.projectBaseDir=WebApiProject
             -Dsonar.sources=.
+            -Dsonar.inclusions=**/*.cs
             -Dsonar.exclusions=**/bin/**,**/obj/**
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
