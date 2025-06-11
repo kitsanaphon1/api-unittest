@@ -33,9 +33,6 @@ SONAR_ORGANIZATION	เช่น kitsanaphon1
 🧪 ขั้นตอนที่ 4: เพิ่มลงใน GitHub Actions Workflow
 ใช้ action แบบใหม่ตามนี้:
 
-yaml
-Copy
-Edit
 - name: SonarCloud Scan
   uses: SonarSource/sonarqube-scan-action@v5.0.0
   with:
@@ -50,9 +47,7 @@ Edit
 🗂 ขั้นตอนเพิ่มเติม (ถ้าอยากให้ส่ง Code Coverage ไปด้วย)
 ให้ generate report .xml แล้วระบุ path เพิ่มเติมใน args เช่น:
 
-yaml
-Copy
-Edit
+
 -Dsonar.cs.opencover.reportsPaths=TestResults/**/coverage.opencover.xml
 ⚠️ ต้องใช้ --collect:"XPlat Code Coverage" และอาจต้อง convert เป็น opencover ด้วย coverlet ถ้าใช้ SonarCloud กับ .NET
 
