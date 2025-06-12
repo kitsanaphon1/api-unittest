@@ -1,7 +1,8 @@
 name: Build & Scan Docker Image
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [dev]
 
 permissions:
   contents: read
@@ -63,7 +64,7 @@ jobs:
       - name: Build Docker Image
         run: docker build -t api-unittest:latest -f WebApiProject/Dockerfile WebApiProject
 
-      - name: Scan with Trivy
+      - name: Scan with Trivy (SARIF for Dashboard)
         uses: aquasecurity/trivy-action@master
         with:
           image-ref: 'api-unittest:latest'
@@ -75,12 +76,23 @@ jobs:
         with:
           sarif_file: trivy-results.sarif
 
-      - name: Push Docker Image
+      - name: ❗ Fail if CRITICAL vulnerabilities found
+        run: |
+          trivy image --severity CRITICAL --exit-code 1 --no-progress api-unittest:latest
+
+      - name: ⏸️ Manual Approval before Docker Push
+        if: ${{ success() }}
+        environment:
+          name: docker-publish
+
+      - name: ⬆️ Push Docker Image
+        if: ${{ success() }}
         run: |
           docker tag api-unittest:latest sooyaa02/api-unittest:latest
           docker push sooyaa02/api-unittest:latest
 
       - name: Send Mail Notification
+        if: ${{ success() }}
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com

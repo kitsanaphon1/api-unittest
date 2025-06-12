@@ -87,3 +87,17 @@ SonarCloud เปิด Automatic Analysis (สแกนอัตโนมัต
 ⚠️ Code Smells
 
 📊 Test Coverage %
+
+
+
+
+เเสกนเเล้ว sonaqure ไม่ไปอ่านโค้ดทั้งหมด 
+
+❌ ปัญหา 1: Scanner ที่ใช้ ไม่รองรับ .NET (C#)
+ใน Log มีข้อความชัดเจนว่า:
+
+
+WARN  Your project contains C# files which cannot be analyzed with the scanner you are using.
+To analyze C# or VB.NET, you must use the SonarScanner for .NET 5.x or higher
+✅ วิธีแก้:
+เปลี่ยนจาก sonarqube-scan-action@v5.0.0 เป็นการใช้ dotnet-sonarscanner ตามแนวทางจาก SonarSource โดยใช้คำสั่ง begin, build, test, end
