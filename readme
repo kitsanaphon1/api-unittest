@@ -101,3 +101,16 @@ WARN  Your project contains C# files which cannot be analyzed with the scanner y
 To analyze C# or VB.NET, you must use the SonarScanner for .NET 5.x or higher
 ✅ วิธีแก้:
 เปลี่ยนจาก sonarqube-scan-action@v5.0.0 เป็นการใช้ dotnet-sonarscanner ตามแนวทางจาก SonarSource โดยใช้คำสั่ง begin, build, test, end
+
+
+
+
+#ทำให้ workflow นี้สามารถรันได้ด้วยตนเอง
+
+on:
+  workflow_dispatch:
+ 
+#ทำให้ workflow นี้รันเมื่อมีการ push ไปยัง branch dev
+on:
+  push:
+    branches: [dev]
