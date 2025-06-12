@@ -80,13 +80,10 @@ jobs:
         run: |
           trivy image --severity CRITICAL --exit-code 1 --no-progress api-unittest:latest
 
-      - name: ⏸️ Manual Approval before Docker Push
+      - name: ⬆️ Push Docker Image
         if: ${{ success() }}
         environment:
           name: docker-publish
-
-      - name: ⬆️ Push Docker Image
-        if: ${{ success() }}
         run: |
           docker tag api-unittest:latest sooyaa02/api-unittest:latest
           docker push sooyaa02/api-unittest:latest
@@ -106,5 +103,5 @@ jobs:
             ✅ All CI steps completed successfully.
             - Unit Tests passed (see GitHub Actions log or download HTML coverage report)
             - Docker Image built and pushed
-            - Trivy scan completed
+            - Trivy scan completed (no CRITICAL found)
             - Image: sooyaa02/api-unittest:latest
