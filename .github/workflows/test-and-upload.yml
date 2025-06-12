@@ -11,6 +11,8 @@ permissions:
 jobs:
   build-and-scan:
     runs-on: ubuntu-latest
+    environment:
+      name: docker-publish  # ✅ ย้ายมาไว้ระดับ job (ปลอดภัย)
 
     steps:
       - name: Checkout Code
@@ -82,12 +84,10 @@ jobs:
 
       - name: ⬆️ Push Docker Image
         if: ${{ success() }}
-        environment:
-          name: docker-publish
         run: |
           docker tag api-unittest:latest sooyaa02/api-unittest:latest
           docker push sooyaa02/api-unittest:latest
-        
+
       - name: Send Mail Notification
         if: ${{ success() }}
         uses: dawidd6/action-send-mail@v3
@@ -101,7 +101,7 @@ jobs:
           from: GitHub CI <${{ secrets.MAIL_USERNAME }}>
           body: |
             ✅ All CI steps completed successfully.
-            - Unit Tests passed (see GitHub Actions log or download HTML coverage report)
+            - Unit Tests passed
             - Docker Image built and pushed
             - Trivy scan completed (no CRITICAL found)
             - Image: sooyaa02/api-unittest:latest
